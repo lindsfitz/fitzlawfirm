@@ -1,0 +1,418 @@
+:root{
+    --btn-orange: #ff4c14;
+    --box-blue: #007baf;
+    --practice-bg: #f3f2ee;
+    --darkblue: #002e46;
+    --bgwhite:#ffffff;
+    --blue-font: #92bed7;
+    --drkblue-font: #348dba;
+}
+
+
+@font-face {
+    font-family: ButlerLight;
+    src: url("./Font/Butler_Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GothamBook;
+    src: url('./Font/Gotham-Book.otf');
+}
+
+@font-face {
+    font-family: Adibafih;
+    src: url('./Font/Adibafih.otf');
+}
+
+@font-face {
+    font-family: GothamLight;
+    src: url('./Font/Gotham-Light-Regular.otf');
+}
+
+@font-face {
+    font-family: GothamBlack;
+    src: url('./Font/Gotham-Black.otf');
+}
+
+
+
+body {
+    font-family: GothamLight;
+    background: var(--bgwhite);
+    margin:0;
+}
+
+
+h1, h2, h3 {
+    font-family: ButlerLight;
+}
+
+h4, h5 {
+    font-family:'GothamBook'
+}
+
+h6 {
+    font-family: Adibafih;
+    color: var(--drkblue-font);
+}
+
+
+
+a {
+    text-decoration: none;
+    color:black;
+} 
+
+/* form label properties -- contact & login forms */
+label {
+    color: var(--drkblue-font);
+    font-family: 'GothamBook';
+    font-weight: bolder;
+    font-size: x-small;
+}
+
+/* button classes used on various pages */
+.hollow-btn {
+    background: var(--bgwhite);
+    color:black;
+    border:var(--box-blue) 1px solid;
+    padding:10px;
+    font-family: 'GothamBook';
+}
+
+.contact-btn {
+    background: var(--btn-orange);
+    color:#ffffff;
+    padding: 10px 30px 10px 30px;
+    font-family: 'GothamBook';
+}
+
+/* ----------------------NAVIGATION/FOOTER ----------------------*/
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#navlinks {
+    display:flex;
+    justify-content: space-between;
+}
+
+nav a, #footer-nav a {
+    font-family: 'GothamBook';
+    margin:auto 20px auto 20px;
+    color: var(--drkblue-font);
+    font-size: small;
+}
+
+#footer-nav {
+    display:flex;
+    justify-content: center;
+    margin:2% 10% 2% 10%
+}
+
+#footer-info {
+    display:flex;
+    justify-content: space-evenly;
+    margin: 2% 10% 2% 10%;
+    text-align: center;
+    border-top: solid 1px var(--box-blue);
+    border-bottom: solid 1px var(--box-blue);
+    padding:20px;
+}
+
+#footer a {
+    color:#ffffff;
+}
+
+.footerSections {
+    width:30%;
+    color:white;
+}
+
+
+/* ----------------------HEADER IMG/TAGLINE----------------------  */
+
+#tagline {
+    position: absolute;
+    left:20px;
+    top:300px;
+    max-width: 25%;
+
+}
+
+/* ----------------------ABOUT US (IMG & DESCRIPTION)---------------------- */
+
+#about-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:11%;
+}
+
+#about-us {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------------ABOUT US (WHAT WE DO)---------------------- */
+
+#practice-container {
+    display:flex;
+}
+
+#practice-intro {
+    width:50%;
+    text-align: center;
+}
+
+.practice-areas{
+    display:'flex';
+    flex-direction: column;
+    padding:15px;
+    margin:10px;
+    box-shadow: 3px 3px 8px #888888;
+    background-color: var(--bgwhite);
+    text-align: center;
+}
+
+/* ----------------------MEET THE ATTORNEY---------------------- */
+
+#meet-attorney {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px
+}
+
+#headshot {
+    border-radius: 10px;
+}
+
+/* ----------------------ESTATE PLANNING---------------------- */
+
+#estate-container {
+    display:flex;
+    flex-direction: column;
+    margin: 5% 10% 5% 10%
+}
+
+.estate-content {
+    background-color: var(--practice-bg);
+    margin: 1%;
+    padding:20px;
+}
+
+/* ----------------------CONTACT US---------------------- */
+
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 10%;
+    text-align: center
+}
+
+#contact-box {
+    background-color: var(--practice-bg);
+    border-radius: 10px;
+    padding:20px
+}
+
+#contact-form {
+    display:flex;
+    flex-direction: column;
+    width:75%;
+    margin: 1% auto 1% auto;
+    text-align: left;
+}
+
+
+#contact-form input, #login-form input {
+    height:35px;
+    font-family: 'GothamBook';
+}
+
+#contact-form textarea {
+    font-family: 'GothamBook';
+}
+
+/* ----------------------LOGIN---------------------- */
+
+#login {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+    text-align: center;
+}
+
+#login-container {
+    width:75%;
+    background: var(--practice-bg);
+    padding: 100px 30px 100px 30px;
+    border-radius: 10px;
+}
+
+#login-form {
+    display:flex;
+    flex-direction: column;
+    width:35%;
+    margin: 1% auto 1% auto;
+    text-align: left;
+}
+
+
+/* ----------------------MOBILE - 1350px or SMALLER---------------------- */
+
+@media screen and (max-width: 1350px) {
+    #navlinks {
+        justify-content: flex-start;
+    }
+    nav a {
+        margin: auto 8px auto 8px
+    }
+
+    #tagline {
+        top:80px;
+    }
+
+    #about-container {
+        margin: 11% 4% 11% 4%;
+    }
+    
+}
+
+
+@media screen and (max-width: 875px) {
+
+    nav a {
+        font-size: x-small;
+    }
+
+    #nav-call-btn {
+        font-size: x-small;
+    }
+
+    #tagline {
+        top:30px;
+    }
+
+    #tagline h1 {
+        font-size: 1.7em;
+    }
+
+    #tagline h3 {
+        font-size: 1em;
+    }
+
+    #about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #meet-attorney {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #headshot {
+        width:300px
+    }
+
+    
+}
+
+
+
+
+/* ----------------------MOBILE - 540px or SMALLER---------------------- */
+
+@media screen and (max-width:540px) {
+    #nav-logo {
+        width:170px;
+    }
+    #mobilenav {
+        position:absolute;
+        z-index: 1;
+        padding:10px;
+        top:0;
+        right:0;
+        background:var(--practice-bg);
+        width:fit-content;
+        height:fit-content;
+    }
+    
+    #mobilenav a {
+        display:inline-block;
+    }
+
+    #footer a {
+        font-size: xx-small;
+    }
+
+    #nav-call-btn {
+        margin-right:15px;
+    }
+
+    #tagline {
+        top:5px;
+        max-width:30%
+    }
+
+    #tagline h1 {
+        font-size: 1em;
+    }
+
+    #tagline h3 {
+        font-size: 0.7em;
+    }
+
+    #tagline button {
+        font-size: 0.4em;
+        padding: 2px 6px 2px 6px
+    }
+
+    #about-us img {
+        width:300px;
+        height: auto;
+    }
+
+    #practice-container {
+        flex-direction: column;
+        width:100%;
+    }
+
+    #practice-intro {
+        padding: 5px;
+        width: 90%;
+    }
+
+    .practice-areas {
+        margin:10px 2px 10px 2px;
+    }
+
+    #footer-info {
+        margin: 1%;
+        font-size: xx-small
+    }
+
+    .footerSections {
+        width:50%;
+    }
+
+    #name-container {
+        flex-direction: column;
+    }
+
+    #login-form {
+        width:100%
+    }
+
+    
+}
