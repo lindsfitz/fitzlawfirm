@@ -7,7 +7,7 @@ export default function Attorney() {
 
     const attorneyStyle = {
         display: 'flex',
-        flexDirection:'column',
+        flexDirection: 'column',
         alignItems: 'center',
         margin: '5% 10% 5% 10%',
         padding: '30px',
@@ -26,13 +26,17 @@ export default function Attorney() {
                         His candid legal advice encourages them to proactively address the known trust, estate and legacy issues we all face their most daunting legal problems with candid, honest advice. As an attorney focused on providing professional estate planning services to individuals and families in the Conejo Valley, Tim counsels his clients to plan their future in the present while they are able to tackle the most complex of issues.
                     </p>
 
+
                     <button type="button" className="contact-btn" onClick={() => navigate('/contact')}>
                         CONTACT US
                     </button>
                     <br />
                 </div>
                 <br />
-                <img id='headshot' src="./assets/small-headshot.png" alt="headshot-logo" width='400px' />
+                <div style={{display:'flex',flexDirection:'column'}}>
+                    <img id='headshot' src="./assets/small-headshot.png" alt="headshot-logo" width='400px' /><br />
+                    <img id='wc-logo' src='./assets/wealthcounsel.png' alt='wealthcounsel-member' width='400px' />
+                </div>
             </div>
         </div>
     )

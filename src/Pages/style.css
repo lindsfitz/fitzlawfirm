@@ -321,9 +321,11 @@ nav a, #footer-nav a {
         text-align: center;
     }
 
-    #headshot {
+    #headshot, #wc-logo {
         width:300px
     }
+
+
 
     
 }
