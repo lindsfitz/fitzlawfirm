@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
+
+    // let navigate = useNavigate();
 
     const [loginEmail, setLoginEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -23,7 +25,7 @@ export default function Login() {
                     <button type='submit' className="hollow-btn">Login</button>
                     <br />
                 </form>
-                <a href='#'>New Client? Create an account.</a>
+                <a href='/signup'>New Client? Create an account.</a>
             </div>
 
         </div>

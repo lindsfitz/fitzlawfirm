@@ -3,23 +3,6 @@ import {  BsGeoAlt, BsEnvelope, BsTelephone } from "react-icons/bs";
 
 export default function Footer() {
 
-    const footerNav = {
-        display: 'flex',
-        justifyContent: 'center',
-        margin: '2% 10% 2% 10%'
-    }
-
-    const footerInfo = {
-        display: 'flex',
-        justifyContent: 'space-evenly',
-        margin: '2% 10% 2% 10%',
-        textAlign: 'center',
-        borderTop: 'solid 1px #007baf',
-        borderBottom: 'solid 1px #007baf',
-        padding: '20px'
-    }
-
-
     return (
         <div id='footer' style={{ background: '#002e46', padding: '30px' }}>
             <div id='footer-nav'>

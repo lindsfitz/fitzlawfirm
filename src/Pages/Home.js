@@ -7,17 +7,6 @@ export default function Home() {
 
     let navigate = useNavigate();
 
-    const header = {
-        postion: 'relative',
-    }
-
-    const tagline = {
-        position: 'absolute',
-        left: 20,
-        bottom: '400px',
-        maxWidth: '25%'
-    }
-
     return (
         <div>
             <div style={{position:'relative'}}>
@@ -25,7 +14,7 @@ export default function Home() {
                 <div id='tagline'>
                     <h1>Find Solutions To Protect What Matters Most.</h1>
                     <h3>Tim FitzGerald works with local parents and families to protect their children, their assets and their legacies.</h3>
-                    <button type="button" class="contact-btn" onClick={() => navigate('/contact')}>CONTACT US</button>
+                    <button type="button" className="contact-btn" onClick={() => navigate('/contact')}>CONTACT US</button>
                 </div>
             </div>
 
