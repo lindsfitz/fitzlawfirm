@@ -20,7 +20,7 @@ export default function Attorney() {
                 <div id="meet-info" style={{ padding: '0 20px 0 30px' }}>
                     <h1>Timothy M. FitzGerald</h1>
 
-                    <p>Tim Fitzgeralds unique background provides him the perspective to help his clients solve their unique
+                    <p>Tim FitzGerald's unique background provides him the perspective to help his clients solve their unique
                         problems.
                         He provides professional estate planning services to individuals and families in the Conjeo Valley and throughout California.
                         His candid legal advice encourages them to proactively address the known trust, estate and legacy issues we all face and solve their most daunting legal problems with candid, honest advice. As an attorney focused on providing professional estate planning services to individuals and families in the Conejo Valley, Tim counsels his clients to plan their future in the present while they are able to tackle the most complex of issues.
