@@ -48,7 +48,8 @@ export default function Nav() {
                     <a href="/contact">CONTACT US</a>
                 </div>}
                 {mobileNav && <div>
-                    <button id='nav-call-btn' className="hollow-btn" href="tel:8186744441"><BsTelephone /> 818-674-4441</button>
+                    <a href='tel:8186744441'>
+                        <button id='nav-call-btn' className="hollow-btn"><BsTelephone /> 818-674-4441</button></a>
                     <button style={menu} onClick={handleToggle}><BsList /></button>
                 </div>
                 }
@@ -62,7 +63,8 @@ export default function Nav() {
                 </div>}
 
                 {!mobileNav && <div>
-                    <button id='nav-call-btn' className="hollow-btn" href="tel:8186744441"><BsTelephone /> 818-674-4441</button>
+                    <a href='tel:8186744441'>
+                        <button id='nav-call-btn' className="hollow-btn"><BsTelephone /> 818-674-4441</button></a>
                     <a href='/login'>Login</a>
                 </div>}
             </nav>
