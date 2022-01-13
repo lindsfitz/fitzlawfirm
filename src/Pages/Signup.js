@@ -9,6 +9,7 @@ export default function Signup() {
 
     return (
         <div id='login'>
+            <h2 style={{color:'red'}}>This feature is currently in development! Come back later to visit our client portal for convenient document upload and storage.</h2>
             <h1>Create a New Client Account.</h1>
             <h5>Welcome to FitzLawFirm!</h5>
             <div id='login-container'>

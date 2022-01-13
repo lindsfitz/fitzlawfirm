@@ -38,7 +38,7 @@ export default function Nav() {
         <div>
             <nav>
                 <div>
-                    <img id='nav-logo' src='./assets/skinnylogo.png' width='250px'
+                    <img id='nav-logo' src='./assets/skinnylogo.png' width='350px'
                         alt='logo' />
                 </div>
                 {!mobileNav && <div id='navlinks'>

@@ -10,6 +10,7 @@ export default function Login() {
 
     return (
         <div id='login'>
+            <h2 style={{color:'red'}}>This feature is currently in development! Come back later to visit our client portal for convenient document upload and storage.</h2>
             <h1>Welcome Back!</h1>
             <h5>Login to see your customer dashboard.</h5>
             <div id='login-container'>

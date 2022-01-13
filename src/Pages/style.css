@@ -196,14 +196,44 @@ nav a, #footer-nav a {
 
 #estate-container {
     display:flex;
+}
+
+#estate-content-container {
+    display:flex;
     flex-direction: column;
-    margin: 5% 10% 5% 10%
+    width:80%;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .estate-content {
     background-color: var(--practice-bg);
-    margin: 1%;
+    margin: 0 1% 1% 1%;
     padding:20px;
+}
+
+.estate-content h2, h3 {
+    color: var(--darkblue)
+}
+
+#estate-navigation {
+    color:white;
+    display:flex;
+    flex-direction: column;
+    background: var(--box-blue);
+    padding: 20px;
+    border:var(--darkblue) 3px solid;
+    height:fit-content;
+    position: sticky;
+    top:0;
+    width: 15%;
+    margin-bottom: 15px;
+}
+
+#estate-navigation a {
+    color: var(--blue-font);
+
 }
 
 /* ----------------------CONTACT US---------------------- */
@@ -397,6 +427,27 @@ nav a, #footer-nav a {
 
     .practice-areas {
         margin:10px 2px 10px 2px;
+    }
+
+    #estate-container {
+        flex-direction: column;
+    }
+
+    #estate-navigation {
+        width: 80%;
+        font-size: small;
+        padding:10px;
+        align-self: center;
+        position:static;
+    }
+
+    #estate-link-box {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    #estate-content-container {
+        width:100%
     }
 
     #footer-info {
