@@ -100,6 +100,10 @@ nav {
     justify-content: space-between;
 }
 
+#menu-btn {
+    display:none;
+}
+
 nav a, #footer-nav a {
     font-family: 'GothamBook';
     margin:auto 20px auto 20px;
@@ -138,7 +142,7 @@ nav a, #footer-nav a {
 #tagline {
     position: absolute;
     left:20px;
-    top:300px;
+    top:150px;
     max-width: 25%;
 
 }
@@ -369,6 +373,16 @@ nav a, #footer-nav a {
     #nav-logo {
         width:170px;
     }
+
+    #menu-btn {
+        display:inline;
+        margin-right: 4px;
+    }
+
+    #navlinks, #login-btn {
+        display:none;
+    }
+
     #mobilenav {
         position:absolute;
         z-index: 1;
@@ -388,8 +402,8 @@ nav a, #footer-nav a {
         font-size: xx-small;
     }
 
-    #nav-call-btn {
-        margin-right:15px;
+    #header-img {
+        height: 300px;
     }
 
     #tagline {

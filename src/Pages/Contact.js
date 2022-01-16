@@ -1,11 +1,42 @@
 import React, { useState } from "react";
+import emailjs from '@emailjs/browser'
 
 export default function Contact() {
-    const [firstName, setFirstName] = useState('')
-    const [lastName, setLastName] = useState('')
-    const [email, setEmail] = useState('')
-    const [phone, setPhone] = useState('')
-    const [message, setMessage] = useState('')
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [message, setMessage] = useState('');
+    const [emailSent, setEmailSent] = useState(false);
+
+    const submit = () => {
+        if (firstName && email && message) {
+            const serviceId = 'service_1pfy7lc';
+            const templateId = 'template_vorzabq';
+            const userId = 'user_DO6rrtHQtz7YolqbTInhc';
+            const templateParams = {
+                firstName,
+                lastName,
+                email,
+                phone,
+                message
+            };
+
+            emailjs.send(serviceId, templateId, templateParams, userId)
+                .then(response => console.log(response))
+                .then(error => console.log(error));
+    
+            setFirstName('');
+            setLastName('');
+            setPhone('');
+            setEmail('');
+            setMessage('');
+            setEmailSent(true);
+            // alert('Message Sent! Thank you for reaching out.')
+        } else {
+            alert('Please fill in the required fields.');
+        }
+    }
    
     return (
         <div id='contact-us'>
@@ -37,7 +68,9 @@ export default function Contact() {
                         onChange={e => setMessage(e.target.value)}></textarea>
                 </form>
                 <br />
-                <button type="submit" className="contact-btn" id="send-message-btn">SEND MESSAGE</button>
+                <button onClick={submit} type="submit" className="contact-btn" id="send-message-btn">SEND MESSAGE</button>
+                <br /><br />
+                {emailSent && <span>Message Sent! Thank you for reaching out.</span>}
 
             </div>
 
