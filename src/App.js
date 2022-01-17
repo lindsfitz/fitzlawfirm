@@ -8,7 +8,7 @@ import Contact from './Pages/Contact';
 import Estate from './Pages/Estate';
 import Home from './Pages/Home';
 import Footer from './Pages/Footer';
-import './Pages/style.css'
+import './style.css'
 
 function App() {
   return (

@@ -32,7 +32,6 @@ export default function Contact() {
             setEmail('');
             setMessage('');
             setEmailSent(true);
-            // alert('Message Sent! Thank you for reaching out.')
         } else {
             alert('Please fill in the required fields.');
         }

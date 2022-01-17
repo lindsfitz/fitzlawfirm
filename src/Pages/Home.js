@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <div>
             <div style={{position:'relative'}}>
-                <img id='header-img' src="./assets/head-fam.png" alt="happy-family" height='auto' width='100%' />
+                <img id='header-img' src="./assets/head-fam.jpeg" alt="happy-family" height='auto' width='100%' />
                 <div id='tagline'>
                     <h1>Find Solutions To Protect What Matters Most.</h1>
                     <h3>Tim FitzGerald works with local parents and families to protect their children, their assets and their legacies.</h3>

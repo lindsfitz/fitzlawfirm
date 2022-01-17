@@ -22,7 +22,7 @@ export default function AboutUs() {
             <div id='about-container'>
                 <h6>ABOUT US</h6>
                 <div id='about-us'>
-                    <img src="./assets/about-us.jpeg" width='450px' height='300px' alt="client-meeting" />
+                    <img src="./assets/about-us.jpg" width='450px' height='300px' alt="client-meeting" />
                     <div style={{ padding: '0 20px 0 20px' }}>
                         <h2>Estate Planning Services and Management</h2>
                         <p>Our clients face serious legal issues that present challenges to the success of their families. These include premature death, disability and incapacity. In these scenarios, they take comfort in knowing that they prepared for the best care available for themselves and their loved ones. Making time and decisions in the present lead to better solutions when life happens. Though many times there are no perfect solutions when life throws a curveball, well thought out and professionally constructed plans lead to superior outcomes.</p>
